@@ -55,9 +55,7 @@ Peor caso:
 O(9^n)
 ```
 
-Donde:
-
-- n = cantidad de casillas vacías.
+Donde: n = cantidad de casillas vacías.
 
 ---
 
@@ -93,9 +91,7 @@ Peor caso:
 O(2^n)
 ```
 
-Donde:
-
-- n = cantidad de objetos disponibles.
+Donde: n = cantidad de objetos disponibles.
 
 ---
 
@@ -143,7 +139,7 @@ Con estos proyectos se busca aplicar conceptos relacionados con:
 
 **Luis Gerardo Aguirre Cervantes**
 
-Maestría en Sistemas  
+Maestría en Cyberseguridad
 Universidad Autónoma de Guadalajara
 
 ---
