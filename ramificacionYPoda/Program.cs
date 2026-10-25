@@ -5,7 +5,7 @@ using System.Diagnostics;
 class Item
 {
     public int Id;
-    public int Valor;
+    public int Valor; 
     public int Peso;
 
     public Item(int id, int valor, int peso)

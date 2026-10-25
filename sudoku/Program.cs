@@ -15,11 +15,12 @@ class SudokuSolver
             Console.WriteLine("=========================================");
             Console.WriteLine(" SOLUCIÓN DE SUDOKU MEDIANTE BACKTRACKING");
             Console.WriteLine("=========================================");
-            Console.WriteLine("1. Resolver Sudoku del ejercicio");
-            Console.WriteLine("2. Resolver Sudoku de prueba #1");
-            Console.WriteLine("3. Resolver Sudoku de prueba #2");
-            Console.WriteLine("4. Capturar Sudoku manualmente");
-            Console.WriteLine("5. Salir");
+            Console.WriteLine("1. Resolver Sudoku del ejercicio #1");
+            Console.WriteLine("2. Resolver Sudoku del ejercicio #1");
+            Console.WriteLine("3. Resolver Sudoku de prueba #1");
+            Console.WriteLine("4. Resolver Sudoku de prueba #2");
+            Console.WriteLine("5. Capturar Sudoku manualmente");
+            Console.WriteLine("6. Salir");
             Console.WriteLine("=========================================");
             Console.Write("Seleccione una opción: ");
 
@@ -28,22 +29,21 @@ class SudokuSolver
             switch (opcion)
             {
                 case "1":
-                    EjecutarSudoku(SudokuEjercicio());
+                    EjecutarSudoku(SudokuEjercicio1());
                     break;
-
                 case "2":
+                    EjecutarSudoku(SudokuEjercicio2());
+                    break;
+                case "3":
                     EjecutarSudoku(SudokuPrueba1());
                     break;
-
-                case "3":
+                case "4":
                     EjecutarSudoku(SudokuPrueba2());
                     break;
-
-                case "4":
+                case "5":
                     EjecutarSudoku(CapturarSudoku());
                     break;
-
-                case "5":
+                case "6":
                     return;
 
                 default:
@@ -209,7 +209,7 @@ class SudokuSolver
         return tablero;
     }
 
-    static int[,] SudokuEjercicio()
+    static int[,] SudokuEjercicio1()
     {
         return new int[,]
         {
@@ -224,6 +224,23 @@ class SudokuSolver
             {8,5,0,7,2,0,0,0,3}
         };
     }
+
+    static int[,] SudokuEjercicio2()
+    {
+        return new int[,]
+        {
+            {6,9,0,0,0,0,7,0,0},
+            {0,0,0,0,9,6,0,0,0},
+            {0,8,0,7,5,3,0,9,0},
+            {0,2,0,3,7,4,5,6,1},
+            {3,6,0,0,0,5,0,2,0},
+            {0,0,0,9,6,0,3,7,8},
+            {0,0,6,0,3,1,0,8,4},
+            {0,4,5,8,0,7,6,0,0},
+            {0,0,0,0,0,0,0,5,7}
+        };
+    }
+
 
     static int[,] SudokuPrueba1()
     {
