@@ -139,7 +139,7 @@ Con estos proyectos se busca aplicar conceptos relacionados con:
 
 **Luis Gerardo Aguirre Cervantes**
 
-Maestría en Sistemas  
+Maestría en Cyberseguridad
 Universidad Autónoma de Guadalajara
 
 ---
