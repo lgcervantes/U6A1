@@ -55,9 +55,7 @@ Peor caso:
 O(9^n)
 ```
 
-Donde:
-
-- n = cantidad de casillas vacías.
+Donde: n = cantidad de casillas vacías.
 
 ---
 
@@ -93,9 +91,7 @@ Peor caso:
 O(2^n)
 ```
 
-Donde:
-
-- n = cantidad de objetos disponibles.
+Donde: n = cantidad de objetos disponibles.
 
 ---
 
