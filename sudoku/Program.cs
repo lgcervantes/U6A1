@@ -24,7 +24,7 @@ class SudokuSolver
             Console.WriteLine("=========================================");
             Console.Write("Seleccione una opción: ");
 
-            string opcion = Console.ReadLine();
+            string opcion = Console.ReadLine()!;
 
             switch (opcion)
             {

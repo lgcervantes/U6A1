@@ -19,7 +19,7 @@ class Item
 class MochilaBranchAndBound
 {
     static int mejorValor;
-    static List<int> mejorSolucion;
+    static List<int> mejorSolucion = [];
 
     static long nodosGenerados;
     static long ramasPodadas;
@@ -41,7 +41,7 @@ class MochilaBranchAndBound
 
             Console.Write("Seleccione una opción: ");
 
-            string opcion = Console.ReadLine();
+            string opcion = Console.ReadLine()!;
 
             switch (opcion)
             {
@@ -90,10 +90,10 @@ class MochilaBranchAndBound
         Console.Clear();
 
         Console.Write("Capacidad de la mochila: ");
-        int capacidad = int.Parse(Console.ReadLine());
+        int capacidad = int.Parse(Console.ReadLine()!);
 
         Console.Write("Cantidad de objetos: ");
-        int cantidad = int.Parse(Console.ReadLine());
+        int cantidad = int.Parse(Console.ReadLine()!);
 
         List<Item> items = new List<Item>();
 
@@ -102,10 +102,10 @@ class MochilaBranchAndBound
             Console.WriteLine($"\nObjeto {i}");
 
             Console.Write("Valor: ");
-            int valor = int.Parse(Console.ReadLine());
+            int valor = int.Parse(Console.ReadLine()!);
 
             Console.Write("Peso: ");
-            int peso = int.Parse(Console.ReadLine());
+            int peso = int.Parse(Console.ReadLine()!);
 
             items.Add(new Item(i, valor, peso));
         }
@@ -145,7 +145,7 @@ class MochilaBranchAndBound
 
         foreach (int id in mejorSolucion)
         {
-            Item item = items.Find(x => x.Id == id);
+            Item item = items.Find(x => x.Id == id)!;
 
             Console.WriteLine(
                 $"Objeto {item.Id} -> Valor={item.Valor}, Peso={item.Peso}");
